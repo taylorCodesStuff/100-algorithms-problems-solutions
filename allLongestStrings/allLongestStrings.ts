@@ -7,7 +7,7 @@ function allLongestStrings(inputArray: string[]): string[] {
     }
 
     let arr = [];
-    for(i=0;i<inputArray.length;i++){
+    for(let i=0;i<inputArray.length;i++){
         let currElem = inputArray[i];
         let currElemLen = inputArray[i].length;
         if(currElemLen === largStrLen) arr.push(currElem);

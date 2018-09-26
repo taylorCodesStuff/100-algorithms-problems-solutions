@@ -1,5 +1,5 @@
 function arrayPreviousLess(items: number[]): number[] {
-
+    // O(n^2) Solution O(n) space
     let newArr = [-1];
     let prevMin = items[0];
     for(let i=1;i<items.length;i++){

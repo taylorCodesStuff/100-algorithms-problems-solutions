@@ -1,4 +1,5 @@
 function arrayMaxConsecutiveSum(inputArray: number[], k: number): number {
+    // Solution in O(n) Time O(1) Space 
     let max = 0;
     let sum = 0;
 

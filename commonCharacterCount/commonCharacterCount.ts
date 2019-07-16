@@ -11,7 +11,6 @@ function commonCharacterCount(s1: string, s2: string): number {
         if(!minObj[cE]) minObj[cE] = true;
     }
 
-    
     for(let i=0;i<maxLenArr.length;i++){
         let cE = maxLenArr[i];
         if(minObj[cE]) {

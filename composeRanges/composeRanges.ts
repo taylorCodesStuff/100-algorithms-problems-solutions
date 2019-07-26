@@ -26,7 +26,6 @@ function composeRanges(nums: number[]): string[] {
             let rangeCount = runningRange.length;
 
             if(rangeCount < 2){
-                console.log(currElem);
                 stringRange = buildStringRange([currElem]);
             } else {
                 stringRange = buildStringRange([runningRange[0], runningRange[rangeCount - 1]]);

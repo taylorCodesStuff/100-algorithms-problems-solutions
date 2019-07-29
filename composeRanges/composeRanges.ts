@@ -49,5 +49,5 @@ function buildStringRange(arr: number[]): string {
 
 console.log(composeRanges([-1, 0, 1, 2, 6, 7, 9])); // ["-1->2", "6->7", "9"]
 console.log(composeRanges([-1, 0, 1, 2, 6, 7, 8, 9])); // ["-1->2", "6->9"]
-console.log(composeRanges([-1, 0, 1, 2, 5, 7, 8, 9]));
+console.log(composeRanges([-1, 0, 1, 2, 5, 7, 8, 9])); // ["-1->2", "5", "7->9"]
 console.log(composeRanges([-1, 0, 1, 4, 6, 7, 8, 9, 21, 22, 23])); // ["-1->1", "4", "6->9", "21->23"]

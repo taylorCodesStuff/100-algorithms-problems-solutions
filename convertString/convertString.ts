@@ -7,19 +7,24 @@ function convertString(s: string, t: string): boolean {
 
     for(i=0;i<sArr.length;i++) {
         let cE = s[i];
-        if(!sHash.hasOwnProperty(cE)) sHash[cE] = 0;
-        sHash[cE]++;
+        if(!sHash.hasOwnProperty(cE)) {
+            sHash[cE] = {};
+            sHash[cE].index = i;
+            sHash[cE].count = 0;
+        }
+        sHash[cE].count++;
+        sHash[cE].index = i;
     }
-    console.log(sHash);
+
     for(i=0;i<tArr.length;i++){
         let cE = t[i];
-        if(sHash[cE]) sHash[cE]--;
+        if(sHash[cE]) sHash[cE].count--;
 
-        if(sHash[cE] < 0) return false;
+        if(sHash[cE].count < 0 || sHash[cE].index < i) return false;
     }
 
     return true;
 }
-// Order matters 
+// Index order matters 
 console.log(convertString('ceoydefthf5iyg5h5yts', 'codefights')); // true 
 console.log(convertString('addbyca', 'abcd')); // false

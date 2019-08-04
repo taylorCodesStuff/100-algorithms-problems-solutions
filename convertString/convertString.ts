@@ -15,7 +15,6 @@ function convertString(s: string, t: string): boolean {
         sHash[cE].count++;
         sHash[cE].index = i;
     }
-    
 
     for(i=0;i<tArr.length;i++){
         let cE = t[i];

@@ -1,5 +1,6 @@
 function crossingSum(matrix: number[][], a: number, b: number): number {
-  
+ 
+    
 }
 
 console.log(crossingSum([[1, 1, 1, 1], 
